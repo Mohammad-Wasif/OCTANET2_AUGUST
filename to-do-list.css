@@ -1,0 +1,212 @@
+
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:lightgreen;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1em  rgba(0, 0, 0, 0.3);
+  border-radius: 0.8em;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: cadetblue;
+}
+
+#task {
+  width: 80%;
+  background-color:rgb(233, 236, 227);
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid #9e0a0a;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#add-task-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color:goldenrod;
+  color:black;
+  border: 2px solid #9e0a0a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-task-btn:hover {
+  background-color:#ffd55c;
+}
+
+#tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task-check {
+  margin-right: 10px;
+  accent-color: #5c3d87;
+}
+
+.taskname {
+  flex-grow: 1;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.edit, .delete {
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.edit:hover, .delete:hover {
+  color: #5c3d87;
+}
+
+.edit::before, .delete::before {
+  content: '\270E';
+}
+
+.edit::after, .delete::after {
+  content: '\270E';
+  transform: rotate(90deg);
+}
+
+.edit:active::before, .delete:active::before {
+  content: '\270C';
+}
+
+.edit:active::after, .delete:active::after {
+  content: '\270C';
+  transform: rotate(270deg);
+}
+
+input[type="date"] {
+  border: 2px solid #9e0a0a;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color:rgb(233, 236, 227);
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0,.075);
+  -webkit-transition: border-color ease-in-out.15s, -webkit-box-shadow ease-in-out.15s;
+       -o-transition: border-color ease-in-out.15s, box-shadow ease-in-out.15s;
+          transition: border-color ease-in-out.15s, box-shadow ease-in-out.15s;
+}
+
+input[type="date"]:focus {
+  border-color:#5c3d87;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(206, 13, 93, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(206, 47, 95, 0.6);
+}
+
+select {
+  border: 2px solid #9e0a0a;
+  width: 60%;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color:rgb(233, 236, 227);
+  background-image: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0,.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0,.075);
+  -webkit-transition: border-color ease-in-out.15s, -webkit-box-shadow ease-in-out.15s;
+       -o-transition: border-color ease-in-out.15s, box-shadow ease-in-out.15s;
+          transition: border-color ease-in-out.15s, box-shadow ease-in-out.15s;
+}
+
+select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(236, 13, 106, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(236, 13, 106, 0.6);
+}
+option {
+  padding: 2px 6px;
+  font-size: 14px;
+  background-color: #ffd55c;
+  color: black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:pink;
+  font-weight: bolder;
+}
+
+th, td {
+  border: 2px solid #9e0a0a;
+  padding:15px;
+  text-align: left;
+}
+
+th {
+  background-color: #b9dd16;
+  font-weight: bold;
+}
+tr:hover {
+  background-color:palevioletred;
+}
+.High{
+  color: red;
+  font-size: larger;
+}
+.Medium{
+  color: rgb(255, 166, 0);
+  font-size: larger;
+}
+.Low{
+  color: rgb(2, 71, 2);
+  font-size: larger;
+}
+#editbtn{
+  background-color: red;
+}
+
+#text1{
+  font-size: x-large;
+  font-weight: bolder;
+  color: coral;
+
+}
+#text2{
+  font-size: x-large;
+  font-weight: bolder;
+  color: coral;
+}
